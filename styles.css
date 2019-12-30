@@ -24,13 +24,35 @@ header ul li{
     padding:4%;
     background-color:grey;
     color:green;
+    right:80%;
 }
-#logo{
-    color:blue;
-    text-align:center ;
+
+.searchlogo{
+    color:green;
+    background-color:grey;
     position:absolute ;
-    top:6%;
-    background-color:black;
-    height:90%;
-    width:45%;
+    text-align:center;
+    right:0%;
+    animation-duration:1s;
+    animation-name:searchlogo;
+    padding:4.5%;
+}
+
+form{
+    display:none ;   
+}
+.search{
+    right:0%;
+    width:75%;
+    height:35px;
+    position:absolute ;
+    top:100%;
+    padding: 10px;
+    animation-duration:1s;
+    animation-name:formsearch;
+    background-color:rgba(255,255,255,0.5);
+}
+@keyframes formsearch{
+    from{width:0%;}
+    to{width:75%;}
 }
