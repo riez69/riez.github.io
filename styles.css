@@ -14,17 +14,20 @@ header{
 header ul{
     padding:0px;
     list-style: none;
-    position: relative; 
+    position: absolute; 
     display: inline-table;
     width: 99%;
     top:5%;
 }
 header ul li{
-    float:right;
+    float:left;
     padding:4%;
     background-color:grey;
     color:green;
     right:80%;
+}
+header ul li a{
+    color:green;
 }
 
 .searchlogo{
@@ -53,6 +56,6 @@ form{
     background-color:rgba(255,255,255,0.5);
 }
 @keyframes formsearch{
-    from{width:0%;}
-    to{width:75%;}
+    from{height:0%;}
+    to{height:35px;}
 }
