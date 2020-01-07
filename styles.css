@@ -1,0 +1,61 @@
+body {
+    background-color:black;
+}
+header{
+    background-color:grey;
+    height:50px;
+    width:100%;
+    position:absolute ;
+    top:0%;
+    left:0%;
+    right:0%;
+}
+ * {margin:0px; padding:0px;}
+header ul{
+    padding:0px;
+    list-style: none;
+    position: absolute; 
+    display: inline-table;
+    width: 99%;
+    top:5%;
+}
+header ul li{
+    float:left;
+    padding:4%;
+    background-color:grey;
+    color:green;
+    right:80%;
+}
+header ul li a{
+    color:green;
+}
+
+.searchlogo{
+    color:green;
+    background-color:grey;
+    position:absolute ;
+    text-align:center;
+    right:0%;
+    animation-duration:1s;
+    animation-name:searchlogo;
+    padding:4.5%;
+}
+
+form{
+    display:none ;   
+}
+.search{
+    right:0%;
+    width:75%;
+    height:35px;
+    position:absolute ;
+    top:100%;
+    padding: 10px;
+    animation-duration:1s;
+    animation-name:formsearch;
+    background-color:rgba(255,255,255,0.5);
+}
+@keyframes formsearch{
+    from{height:0%;}
+    to{height:35px;}
+}
