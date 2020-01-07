@@ -1,44 +1,57 @@
+
 body {
     background-color:black;
 }
 header{
-    background-color:grey;
+    background-color:black;
     height:50px;
     width:100%;
     position:absolute ;
     top:0%;
     left:0%;
     right:0%;
+    z-index:1;
+    color:white;
 }
+
+
+
  * {margin:0px; padding:0px;}
+/*navbar*/
 header ul{
     padding:0px;
     list-style: none;
-    position: absolute; 
+    position: absolute ; 
     display: inline-table;
     width: 99%;
     top:5%;
+    z-index:2;
 }
 header ul li{
     float:left;
     padding:4%;
-    background-color:grey;
     color:green;
     right:80%;
+    border-radius:100%;
 }
 header ul li a{
     color:green;
+    text-decoration:none;
 }
+
+/* search box */
 
 .searchlogo{
     color:green;
-    background-color:grey;
+    background-color:;
     position:absolute ;
     text-align:center;
     right:0%;
     animation-duration:1s;
     animation-name:searchlogo;
     padding:4.5%;
+    z-index:2;
+    border-radius:100%;
 }
 
 form{
@@ -46,16 +59,85 @@ form{
 }
 .search{
     right:0%;
-    width:75%;
+    width:80%;
     height:35px;
     position:absolute ;
     top:100%;
     padding: 10px;
     animation-duration:1s;
     animation-name:formsearch;
-    background-color:rgba(255,255,255,0.5);
+    background-color:black;
+    z-index:1;
+    border-radius: 10px 0px 0px 10px;
 }
 @keyframes formsearch{
-    from{height:0%;}
-    to{height:35px;}
+    from{top:0%;
+    opacity:0;}
+    to{top:100%;}
 }
+
+/*tag*/
+
+.tag{
+    z-index:0;
+    width:100%;
+    height:50px;
+    background-color:black;
+    position:absolute ;
+    top:10%;
+    word-wrap:break word;
+}
+
+
+.tag ul li{
+    padding:0px;
+    color:white;
+    list-style:box;
+    display:inline-table;
+    padding:3%;
+    
+}
+
+/*konten*/
+.content{
+    z-index:0;
+    width:95%;
+    height:450px;
+    background-color:rgb(255,255,255, 0.5);
+    position:absolute;
+    top:20%;
+    right:2.5%;
+    border:3px outset black;
+    overflow-y:auto;
+    color:white;
+    word-wrap:break-word;
+}
+/* ##### */
+.content h1{
+    position:relative ;
+    text-align:center ;
+    display:content-box ;
+    background-color:black;
+    padding:;
+    border:3px inset white;
+}
+.content p{
+    position:relative ;
+    letter-spacing:20px;
+    max-width:100%;
+    background-color:rgba(255,255,255,0.4);
+    background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    border:3px inset white;
+    color:silver;
+}
+
+
+
+
+
+
+
